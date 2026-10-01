@@ -99,9 +99,9 @@ export const InquiryViewerModal: React.FC<InquiryViewerModalProps> = ({ isOpen, 
                 <div className="grid grid-cols-2 gap-2 text-slate-600">
                   <div className="flex items-center gap-1.5">
                     <Phone className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                    <a href={`tel:${enq.mobileNumber}`} className="font-mono hover:text-amber-800">
+                    <span className="font-mono text-slate-800">
                       +91 {enq.mobileNumber}
-                    </a>
+                    </span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />

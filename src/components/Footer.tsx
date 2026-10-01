@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ArrowUp, MessageSquare } from 'lucide-react';
+import { ArrowUp, ArrowRight } from 'lucide-react';
 
 interface FooterProps {
   onOpenEnquiry: () => void;
@@ -46,11 +46,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnquiry }) => {
                 </a>
               </li>
               <li>
-                <a href="#trust" className="hover:text-white transition-colors">
-                  Trust & Security
-                </a>
-              </li>
-              <li>
                 <a href="#process" className="hover:text-white transition-colors">
                   Application Process
                 </a>
@@ -66,45 +61,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnquiry }) => {
             </ul>
           </div>
 
-          {/* Contact summary */}
+          {/* Contact summary: Professional requirement note without personal or contact details */}
           <div className="lg:col-span-4 space-y-3">
             <div className="text-xs font-bold uppercase tracking-wider text-white">
-              Reach Our Desk
+              Have a Requirement?
             </div>
-            <div className="space-y-2.5 text-xs text-stone-400">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
-                <span>Tighra Road, Gol Pahadiya, Gwalior, Madhya Pradesh – 474001</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-amber-500 shrink-0" />
-                <div>
-                  <span className="text-stone-300 font-medium">Calling: </span>
-                  <a href="tel:9171667597" className="hover:text-white transition-colors font-mono">
-                    9171667597
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
-                <div>
-                  <span className="text-stone-300 font-medium">WhatsApp: </span>
-                  <a 
-                    href="https://wa.me/919575345906" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-emerald-400 hover:text-emerald-300 transition-colors font-mono"
-                  >
-                    9575345906
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                <a href="mailto:info.arvonfinance@gmail.com" className="hover:text-white transition-colors">
-                  info.arvonfinance@gmail.com
-                </a>
-              </div>
+            <p className="text-xs text-stone-400 leading-relaxed">
+              Send us your enquiry and our team will get in touch with you.
+            </p>
+            <div className="pt-2">
+              <button
+                onClick={onOpenEnquiry}
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 border border-stone-800 rounded-lg transition-colors cursor-pointer"
+              >
+                <span>Send Enquiry</span>
+                <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
+              </button>
             </div>
           </div>
 

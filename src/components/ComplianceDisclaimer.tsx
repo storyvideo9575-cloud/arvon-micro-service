@@ -20,7 +20,7 @@ export const ComplianceDisclaimer: React.FC = () => {
             </div>
             <div>
               <p>
-                <strong>Underwriting & Sanction:</strong> All credit evaluations, approvals, final interest rates, processing charges, and loan disbursements are determined strictly at the sole discretion of participating RBI-regulated commercial banks, financial institutions, and NBFCs based on the applicant’s verifiable income, documentation, and credit score.
+                <strong>Underwriting & Sanction:</strong> All credit evaluations, approvals, final charges, and loan disbursements are determined strictly at the sole discretion of participating lending banks, financial institutions, and NBFCs based on the applicant’s verifiable income, documentation, and credit profile.
               </p>
             </div>
           </div>
@@ -28,7 +28,7 @@ export const ComplianceDisclaimer: React.FC = () => {
           <div className="pt-2 border-t border-stone-100 flex items-start gap-2 text-[11px] text-slate-500">
             <Info className="w-3.5 h-3.5 text-amber-800 shrink-0 mt-0.5" />
             <span>
-              <strong>Ethical Notice:</strong> Arvon Micro Service strictly refrains from making unverified claims of &ldquo;100% guaranteed approvals&rdquo; or soliciting unlawful advance commissions. We provide authentic, professional file preparation and support.
+              <strong>Ethical Notice:</strong> Arvon Micro Service strictly refrains from making unverified financial promises or soliciting unlawful advance commissions. We provide authentic, professional file preparation and support.
             </span>
           </div>
 

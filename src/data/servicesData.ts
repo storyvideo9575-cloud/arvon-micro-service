@@ -62,7 +62,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
 ];
 
 export const GWALIOR_AREAS = [
-  'Tighra Road',
+  'Gol Pahadiya',
   'Lashkar',
   'Morar',
   'City Centre',

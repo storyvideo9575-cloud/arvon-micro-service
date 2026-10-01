@@ -115,7 +115,7 @@ export const MissionVisionSection: React.FC = () => {
               </div>
               <h4 className="font-semibold text-sm text-slate-900 mb-1">Local Accessibility</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Direct in-person assistance at our Gwalior office along with telephonic support.
+                Dedicated loan guidance and documentation review for clients in Gwalior.
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export const MissionVisionSection: React.FC = () => {
               </div>
               <h4 className="font-semibold text-sm text-slate-900 mb-1">Ethical Standard</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                We do not promise false &ldquo;guaranteed&rdquo; approvals; we focus on genuine eligibility and preparation.
+                We focus strictly on genuine eligibility, transparent guidance, and meticulous file preparation.
               </p>
             </div>
           </div>

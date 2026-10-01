@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Phone, ShieldCheck, MapPin, CheckCircle2, MessageSquare } from 'lucide-react';
+import { ArrowRight, ShieldCheck, MapPin, CheckCircle2 } from 'lucide-react';
 
 interface HeroProps {
   onOpenEnquiry: () => void;
@@ -73,28 +73,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
               </button>
             </div>
 
-            {/* Calling and WhatsApp Contact bar */}
-            <div className="pt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs">
-              <a
-                href="tel:9171667597"
-                className="inline-flex items-center gap-1.5 font-bold text-slate-800 hover:text-amber-800 transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5 text-amber-700" />
-                <span>Call: 9171667597</span>
-              </a>
-              <a
-                href="https://wa.me/919575345906"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-bold text-emerald-700 hover:text-emerald-900 transition-colors"
-              >
-                <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
-                <span>WhatsApp: 9575345906</span>
-              </a>
-              <div className="flex items-center gap-1.5 text-slate-500">
-                <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                <span>Gwalior, MP</span>
-              </div>
+            {/* Location & Service indicator */}
+            <div className="pt-2 flex items-center gap-2 text-xs text-slate-500">
+              <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+              <span>Gwalior, Madhya Pradesh</span>
             </div>
           </div>
 

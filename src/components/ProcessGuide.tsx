@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, FileCheck, Users, Clock, Phone, MessageSquare } from 'lucide-react';
+import { ArrowRight, CheckCircle, FileCheck, Users, Clock } from 'lucide-react';
 
 interface ProcessGuideProps {
   onStartEnquiry: () => void;
@@ -108,22 +108,6 @@ export const ProcessGuide: React.FC<ProcessGuideProps> = ({ onStartEnquiry }) =>
               <span>Submit Enquiry</span>
               <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
             </button>
-            <a
-              href="tel:9171667597"
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold text-slate-800 bg-stone-100 hover:bg-stone-200 rounded-lg transition-colors whitespace-nowrap"
-            >
-              <Phone className="w-3.5 h-3.5 text-amber-800" />
-              <span>Call: 9171667597</span>
-            </a>
-            <a
-              href="https://wa.me/919575345906"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-colors whitespace-nowrap"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-emerald-700" />
-              <span>WhatsApp: 9575345906</span>
-            </a>
           </div>
         </div>
 

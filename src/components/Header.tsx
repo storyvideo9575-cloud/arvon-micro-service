@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Menu, X, ArrowRight, MessageSquare } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 interface HeaderProps {
   onOpenEnquiry: () => void;
@@ -11,7 +11,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenEnquiry }) => {
   const navLinks = [
     { label: 'Services', href: '#services' },
     { label: 'Mission', href: '#mission' },
-    { label: 'Trust & Security', href: '#trust' },
     { label: 'Process', href: '#process' },
     { label: 'Enquiry', href: '#enquiry-form' },
   ];
@@ -41,29 +40,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenEnquiry }) => {
             ))}
           </nav>
 
-          {/* Zone 3: Direct Calling & WhatsApp actions */}
+          {/* Zone 3: Action */}
           <div className="hidden sm:flex items-center gap-2.5">
-            <a
-              href="tel:9171667597"
-              className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-stone-100 hover:bg-stone-200 rounded-lg transition-colors whitespace-nowrap"
-              title="Call 9171667597"
-            >
-              <Phone className="w-3.5 h-3.5 text-amber-700" />
-              <span>Call: 9171667597</span>
-            </a>
-            <a
-              href="https://wa.me/919575345906"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-colors whitespace-nowrap"
-              title="WhatsApp 9575345906"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-emerald-700" />
-              <span>WhatsApp: 9575345906</span>
-            </a>
             <button
               onClick={onOpenEnquiry}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg shadow-sm transition-colors whitespace-nowrap cursor-pointer ml-1"
+              className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg shadow-sm transition-colors whitespace-nowrap cursor-pointer"
             >
               <span>Enquire</span>
               <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
@@ -104,27 +85,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenEnquiry }) => {
               </a>
             ))}
           </nav>
-          <div className="pt-3 border-t border-stone-100 space-y-2">
-            <div className="text-xs text-slate-500 font-medium px-3">Direct Contact Numbers:</div>
-            <div className="grid grid-cols-1 gap-2">
-              <a
-                href="tel:9171667597"
-                className="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-slate-800 bg-stone-100 rounded-md"
-              >
-                <Phone className="w-3.5 h-3.5 text-amber-700" />
-                <span>Calling: 9171667597</span>
-              </a>
-              <a
-                href="https://wa.me/919575345906"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 rounded-md"
-              >
-                <MessageSquare className="w-3.5 h-3.5 text-emerald-700" />
-                <span>WhatsApp: 9575345906</span>
-              </a>
-            </div>
-          </div>
         </div>
       )}
     </header>
